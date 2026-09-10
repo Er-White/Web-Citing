@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Web Citing: a browser extension for citing web pages"
+abstract: >-
+  A browser extension that reads the current page's public citation metadata and
+  turns it into a reference record importable by reference managers (RIS,
+  EndNote, BibTeX, CSL-JSON) as well as a formatted citation in GB/T 7714-2015,
+  APA 7th, MLA 9th, Chicago and Harvard. All parsing happens locally; the
+  extension makes no network requests.
+authors:
+  - family-names: Bai
+    given-names: Xuqian
+type: software
+license: GPL-3.0-or-later
+version: 1.0.0
+date-released: 2026-09-10
+repository-code: https://github.com/Er-White/Web-Citing
+keywords:
+  - citation
+  - reference management
+  - browser extension
+  - RIS
+  - EndNote
+  - BibTeX
+  - GB/T 7714

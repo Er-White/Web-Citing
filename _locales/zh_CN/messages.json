@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Web Citing",
+    "description": "Extension name shown in the browser and Web Store."
+  },
+  "extDesc": {
+    "message": "一键把当前网页导出为 RIS、EndNote、BibTeX 等文献管理器格式，并生成 GB/T 7714、APA、MLA 等常用引用文本。",
+    "description": "Extension description, must stay under 132 characters."
+  }
+}

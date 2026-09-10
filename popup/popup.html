@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Web Citing</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <header>
+    <span class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span data-i18n="appName"></span>
+    </span>
+    <button id="lang" class="chip" type="button" title="切换语言 / Switch language"></button>
+  </header>
+
+  <div id="status" class="status" hidden>
+    <span id="status-text"></span>
+    <button id="retry" class="chip" type="button" data-i18n="retry" hidden></button>
+    <button id="grant" class="chip" type="button" data-i18n="grant" hidden></button>
+  </div>
+
+  <main id="main" hidden>
+
+    <section class="fields">
+      <div class="field">
+        <label for="f-title" data-i18n="fieldTitle"></label>
+        <input id="f-title" type="text" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="f-authors" data-i18n="fieldAuthors"></label>
+        <input id="f-authors" type="text" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="f-site" data-i18n="fieldSite"></label>
+        <input id="f-site" type="text" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="f-published" data-i18n="fieldPublished"></label>
+        <input id="f-published" type="text" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="f-accessed" data-i18n="fieldAccessed"></label>
+        <input id="f-accessed" type="text" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="f-url" data-i18n="fieldUrl"></label>
+        <input id="f-url" type="text" spellcheck="false" autocomplete="off">
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <label for="style" data-i18n="styleLabel"></label>
+        <select id="style"></select>
+      </div>
+      <label class="check" data-i18n-title="retrievalNote">
+        <input id="retrieval" type="checkbox">
+        <span data-i18n="retrievalDate"></span>
+      </label>
+      <output id="citation" class="citation"></output>
+      <button id="copy-citation" class="primary" type="button" data-i18n="copyCitation"></button>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <label for="format" data-i18n="formatLabel"></label>
+        <select id="format"></select>
+      </div>
+      <label class="check" data-i18n-title="includeAbstractNote">
+        <input id="abstract" type="checkbox">
+        <span data-i18n="includeAbstract"></span>
+      </label>
+      <div class="row">
+        <button id="download" class="primary" type="button" data-i18n="download"></button>
+        <button id="copy-record" class="ghost" type="button" data-i18n="copyRecord"></button>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

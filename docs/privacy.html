@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 / Privacy Policy — Web Citing</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    color: #1a1c1f;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e9ec; background: #1f2023; }
+    a { color: #7aa7ff; }
+    th { background: #27282c; }
+    td, th { border-color: #3a3c42; }
+    .lede { background: #27282c; border-color: #3a3c42; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; padding-top: 1.25rem; border-top: 1px solid #e3e5ea; }
+  .meta { color: #6b7280; font-size: .9rem; margin-top: 0; }
+  .lede {
+    margin: 1.5rem 0;
+    padding: 1rem 1.15rem;
+    background: #f6f7f9;
+    border: 1px solid #e3e5ea;
+    border-radius: 8px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  td, th { border: 1px solid #e3e5ea; padding: .5rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f6f7f9; font-weight: 600; }
+  code { font-size: .9em; }
+  hr { border: 0; border-top: 1px solid #e3e5ea; margin: 3rem 0; }
+  .en h2 { border-top-color: #e3e5ea; }
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p class="meta">Web Citing · 生效日期：2026-09-10 · 版本 1.0.0</p>
+
+<div class="lede">
+  <strong>一句话概括：本扩展不收集、不上传、不存储任何用户数据。</strong>
+  所有处理都在你的浏览器本地完成，扩展没有任何联网功能。
+</div>
+
+<h2>1. 我们不收集什么</h2>
+<p>本扩展<strong>没有</strong>服务器，源码中不存在任何网络请求代码。具体而言：</p>
+<ul>
+  <li>不上传、不转发、不备份任何数据；</li>
+  <li>不含统计分析、埋点、崩溃上报、广告或任何第三方 SDK；</li>
+  <li>不读取、不记录你的浏览历史；</li>
+  <li>不创建账号，不要求登录，不索取个人信息。</li>
+</ul>
+
+<h2>2. 扩展会读取什么</h2>
+<p>仅当你<strong>主动点击扩展图标</strong>或<strong>在页面上选择「引用本页」</strong>时，扩展才会读取当前标签页的公开元数据，用于生成引用：</p>
+<ul>
+  <li>页面标题、作者、发布日期；</li>
+  <li>网站名称、网址；</li>
+  <li>页面自身通过 <code>meta</code> 标签公开声明的上述信息。</li>
+</ul>
+<p>这些信息只在你点击后的那一刻读取，处理完即用于填充面板，<strong>不会离开你的设备</strong>。
+扩展不会在后台自动读取任何页面，也不会读取你没有主动点击的标签页。</p>
+<p>页面摘要字段默认<strong>不导出</strong>；只有当你在面板中主动勾选「同时导出摘要」时，该段文字才会被写入你本地的导出文件。</p>
+
+<h2>3. 数据存储</h2>
+<p>扩展只在本地保存 4 项偏好设置：界面语言、引用格式、导出格式、是否包含检索日期，以及摘要开关。
+这些设置通过浏览器提供的本地存储（<code>chrome.storage.local</code>）保存在你的设备上，
+<strong>不参与浏览器账号同步</strong>，不发送到任何服务器。</p>
+<p>卸载扩展后，这些本地设置会随扩展一并移除。</p>
+
+<h2>4. 权限说明</h2>
+<table>
+  <tr><th>权限</th><th>用途</th></tr>
+  <tr>
+    <td>读取当前页面（<code>activeTab</code>）</td>
+    <td>在你点击扩展时，读取当前页面公开的引用元数据。该权限是临时的，仅对你点击的那一个标签页生效。</td>
+  </tr>
+  <tr>
+    <td>网站访问权限（<code>http://*/*</code>、<code>https://*/*</code>）</td>
+    <td><strong>可选权限，默认不授予。</strong>仅在浏览器未能临时授权读取本页时，由你在扩展面板中点击「授权访问」才会申请。授予后扩展才能在你每次点击时稳定读取网页元数据。</td>
+  </tr>
+  <tr>
+    <td>下载、存储、右键菜单、通知</td>
+    <td>分别用于保存导出的引用文件、记录你的偏好设置、提供右键菜单入口、以及在右键导出后给出结果提示。</td>
+  </tr>
+</table>
+
+<h2>5. 导出文件与著作权提示</h2>
+<p>扩展会把网页上的信息整理成引用记录并保存为本地文件。请注意：</p>
+<ul>
+  <li>标题、作者、日期、网址等属于<strong>事实信息</strong>，用于文献引用是通行做法；</li>
+  <li><strong>摘要</strong>通常是作者的原创表达，受著作权保护。因此扩展默认不导出摘要，需要时请自行勾选；</li>
+  <li>你在使用导出结果时，应遵守目标网站的服务条款及所在地区的法律规定；</li>
+  <li>本扩展仅协助你记录你<strong>本人已经访问并可见</strong>的页面信息，不绕过任何付费墙、登录限制或技术保护措施。</li>
+</ul>
+<p>扩展按「现状」提供，不对生成引用的准确性作担保。引用是否正确、是否适合你的投稿要求，请自行核对。</p>
+
+<h2>6. 政策变更</h2>
+<p>本政策如有更新，将随扩展新版本一并发布，并更新本页顶部的生效日期。</p>
+
+<h2>7. 联系方式</h2>
+<p>如对本政策有疑问，请联系：<a href="mailto:2512154553@qq.com">2512154553@qq.com</a></p>
+
+<hr>
+
+<div class="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Web Citing · Effective 2026-09-10 · Version 1.0.0</p>
+
+<div class="lede">
+  <strong>In short: this extension collects no user data, transmits nothing, and stores nothing remotely.</strong>
+  Everything happens locally in your browser. The extension has no networking code at all.
+</div>
+
+<h2>1. What we do not collect</h2>
+<p>The extension has no server, and its source contains no network requests of any kind. Specifically, it does not:</p>
+<ul>
+  <li>upload, transmit or back up any data;</li>
+  <li>include analytics, telemetry, crash reporting, advertising or any third-party SDK;</li>
+  <li>read or record your browsing history;</li>
+  <li>create accounts, require sign-in, or ask for personal information.</li>
+</ul>
+
+<h2>2. What the extension reads</h2>
+<p>Only when you <strong>click the extension icon</strong> or choose <strong>"Cite this page"</strong> from the right-click menu does it read the current tab's public metadata in order to build a citation:</p>
+<ul>
+  <li>page title, author and publication date;</li>
+  <li>site name and URL;</li>
+  <li>the above as declared by the page itself in its <code>meta</code> tags.</li>
+</ul>
+<p>This is read at the moment you click, used to fill the panel, and <strong>never leaves your device</strong>. The extension never reads pages in the background, and never touches tabs you have not acted on.</p>
+<p>The page abstract is <strong>not</strong> exported by default; that passage is written into your local export file only if you tick "Include abstract".</p>
+
+<h2>3. Storage</h2>
+<p>The extension saves five preferences locally: interface language, citation style, export format, whether to include a retrieval date, and the abstract toggle. These are held in the browser's local storage (<code>chrome.storage.local</code>) on your device only. They are <strong>not</strong> synced to your browser account and not sent anywhere. Removing the extension removes them.</p>
+
+<h2>4. Permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr>
+    <td>Read the current tab (<code>activeTab</code>)</td>
+    <td>Lets the extension read the current page's public citation metadata when you click the icon. The grant is temporary and applies only to the tab you clicked.</td>
+  </tr>
+  <tr>
+    <td>Site access (<code>http://*/*</code>, <code>https://*/*</code>)</td>
+    <td><strong>Optional, and not granted by default.</strong> Requested only if the browser declined to grant temporary access, via the "Grant access" button in the panel. Without it, page metadata can only be read on the temporary grant.</td>
+  </tr>
+  <tr>
+    <td>Downloads, storage, context menus, notifications</td>
+    <td>To save the exported citation file, remember your preferences, provide the right-click entry point, and confirm the result of a right-click export.</td>
+  </tr>
+</table>
+
+<h2>5. Exported files and copyright</h2>
+<ul>
+  <li>Titles, authors, dates and URLs are <strong>facts</strong>, and citing them is standard practice;</li>
+  <li>An <strong>abstract</strong> is normally the author's own expression and is protected by copyright, which is why the extension leaves it out unless you explicitly opt in;</li>
+  <li>You are responsible for complying with the terms of service of the sites you visit and with the law where you are;</li>
+  <li>The extension only helps you record information from pages <strong>you have already visited and can see</strong>. It circumvents no paywall, no login and no technical protection measure.</li>
+</ul>
+<p>The extension is provided "as is", with no warranty as to the accuracy of the citations it generates. Verify them before relying on them.</p>
+
+<h2>6. Changes</h2>
+<p>Any update to this policy ships with a new version of the extension, and the effective date above is revised accordingly.</p>
+
+<h2>7. Contact</h2>
+<p>Questions about this policy: <a href="mailto:2512154553@qq.com">2512154553@qq.com</a></p>
+</div>
+
+</body>
+</html>

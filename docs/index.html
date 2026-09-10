@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Citing</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+    color: #1a1c1f; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e9ec; background: #1f2023; }
+    a { color: #7aa7ff; }
+    .mark { background: #5b8def; }
+  }
+  .mark {
+    width: 64px; height: 64px; border-radius: 16px; background: #2f6feb;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+    background-size: 10px 28px, 10px 28px;
+    background-position: 18px 18px, 36px 18px;
+    background-repeat: no-repeat;
+  }
+  h1 { font-size: 1.5rem; margin: 1.25rem 0 .5rem; }
+  ul { padding-left: 1.25rem; }
+</style>
+</head>
+<body>
+  <div class="mark" aria-hidden="true"></div>
+  <h1>Web Citing</h1>
+  <p>浏览器扩展：一键把当前网页导出成文献管理器能导入的引用格式，并生成排版好的引用文本。</p>
+  <ul>
+    <li>导出 RIS、EndNote、BibTeX、CSL-JSON，可直接导入 Zotero、EndNote、Mendeley、NoteExpress</li>
+    <li>生成 GB/T 7714-2015、APA 7th、MLA 9th、Chicago、Harvard 引用文本</li>
+    <li>不联网、不收集数据，所有处理都在本地完成</li>
+  </ul>
+  <p>
+    <a href="https://github.com/Er-White/Web-Citing">源码仓库 / Source</a> ·
+    <a href="https://github.com/Er-White/Web-Citing/issues">问题反馈 / Issues</a> ·
+    <a href="privacy.html">隐私政策 / Privacy Policy</a>
+  </p>
+</body>
+</html>

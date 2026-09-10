@@ -1,0 +1,11 @@
+# Local tooling configuration — machine-specific, not part of the project.
+.claude/settings.local.json
+
+# Build output. Regenerate with `node tools/package.mjs`. Distribute through a
+# GitHub Release rather than committing it.
+*.zip
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

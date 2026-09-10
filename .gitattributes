@@ -1,0 +1,8 @@
+# Normalise line endings to LF in the repository, whatever the platform.
+# Without this, a Windows checkout converts to CRLF and every later edit shows
+# up as a whole-file diff.
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.png binary
+*.zip binary

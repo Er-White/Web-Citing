@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Web Citing",
+    "description": "Extension name shown in the browser and Web Store."
+  },
+  "extDesc": {
+    "message": "Export the current page to RIS, EndNote, BibTeX and CSL-JSON, and generate ready-to-paste citations in GB/T 7714, APA, MLA, Chicago and Harvard.",
+    "description": "Extension description, must stay under 132 characters."
+  }
+}
